@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">NaijaHacks2020_Android</string>
+
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+
+    <string name="back4app_app_id">mJsouPJeB5MoosPBcstSfAVZso9j5FF8248w3AgE</string>
+    <string name="back4app_client_key">m2alaTyMRBb7oBrwtFQ9H7Fc6SOTS3bCqDl06uOD</string>
 </resources>
