@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.parse.ParseUser;
+
 public class MainActivity extends AppCompatActivity {
 
 
@@ -17,6 +19,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        if (ParseUser.getCurrentUser()!=null){
+            Intent resumeIntent = new Intent(MainActivity.this, Feed.class);
+            startActivity(resumeIntent);
+            finish();
+        }
 
 
         SigninButton = findViewById(R.id.signInBtn);
